@@ -1,0 +1,304 @@
+M|Ackerley|meadow of oak trees|English
+M|Adney|dweller on the island|English
+M|Aeduuard|prosperous guardian|English
+M|Aeduuin|prosperous friend|English
+M|Aelfraed|wise counselor|English
+M|Aland|bright as the sun|English 
+M|Alderney|one of the channel isles|English 
+M|Aldis|old house|English
+M|Aldred|old & wise counselor|English
+M|Aldrich|wise counselor|English
+M|Aldwin|old friend|English
+M|Algernon|wearing moustache|English
+M|Alistair|defender of mankind|English
+M|Allard|noble and brave|English
+M|Allister|defender of mankind|English
+M|Alston|the estate of nobleman|English
+M|Amherst|place name|English 
+M|Archer|bowman|English
+M|Arledge|lake with the hares|English
+M|Arley|hare's meadow|English
+M|Arnette|little eagle|English
+M|Arthur|noble & lofty hill|English
+M|Arundel|eagle valley|English
+M|Ascot|eastern cottage|English
+M| |Medieval Boy Names|Origin
+M|Ashton|ash tree settlement|English
+M|Atherton|from town by the spring|English
+M|Atkins|home of the relatives|English
+M|Atwater|at the water's edge|English
+M|Auden|old friend|English
+M|Audrey|noble strength|English
+M|Audric|wise ruler|English
+M|Averey|noble bear|English
+M|Aylmer|noble, famous|English
+M|Aylwin|noble friend|English
+M|Badrick|axe ruler|English
+M|Bancroft|bean field|English
+M|Barden|barley valley|English
+M|Barlow|bare hillside|English
+M|Barney|son of the missionary|English
+M|Barric|grain farm|English
+M|Barrington|fenced town|English
+M|Barse|fresh-water perch|English 
+M|Bartley|barley meadow|English
+M|Bartram|bright, illustrious|English
+M|Bassett|little person|English
+M|Baul|snail |English 
+M|Bavol|wind |English 
+M|Baxter|baker|English
+M|Bayard|reddish brown hair|English
+M|Beaman|beekeeper|English
+M|Beasley|field of peas|English
+M|Beaver|beaver|English
+M|Bentley|coarse grass meadow|English
+M|Berkeley|birch tree meadow|English
+M|Berwick|barley farm|English
+M|Beval|like the wind |English 
+M|Bickford|ford of the axe man|English
+M|Birkitt|birch tree coast|English
+M|Birley|meadow with the cow barn|English
+M|Birney|island with brook|English
+M|Birtle|bird hill|English
+M|Blakely|dark meadow|English
+M|Blaxton|black stone |Old Eng. 
+M|Blythe|merry, joyful|English
+M|Bolton|from the manor farm|English
+M|Booker|beech tree |Old Eng. 
+M|Bosley|grove of trees|English
+M|Boswell|enclosure by the stream|English
+M|Bowman|the archer |English 
+M|Bradburn|broad stream|English
+M|Braden|broad valley|English
+M|Bradford|broad river crossing|English
+M| |Medieval Boy Names|Origin
+M|Bradshaw|broad fence|English
+M|Bradyn|broad valley|English
+M|Brainard|bold raven; prince|English
+M|Bramwell|bramble spring|English
+M|Brandon|beacon hill; raven|English
+M|Brantley|proud|English
+M|Branton|Brant's town|English
+M|Brawley|meadow on the hillside|English
+M|Braxton|Brock's town|English
+M|Brayden|broad valley|English
+M|Brayton|bright town|English
+M|Brenner|little raven|English
+M|Brentley|proud|English
+M|Bridgely|meadow near bridge|English
+M|Brigham|covered bridge|English
+M|Brinley|tawny|English
+M|Brishen|born during rain |English 
+M|Brockton|badger|English
+M|Bronson|son of the brown man|English
+M|Buckminster|preacher|English
+M|Burbank|caste on slope|English
+M|Burdan|birch tree valley|English
+M|Burleigh|meadow with knotted tree trunks|English
+M|Burne|brook|English
+M|Byram|cattle yard|English
+M|Cadby|warrior's settlement|English
+M|Caldwell|cold well|English
+M|Carleton|Carl's town|English
+M|Carlisle|Carl's island|English
+M|Carlyle|Carl's island|English
+M|Carnell|defender of the castle|English
+M|Carsen|marshland|English
+M|Cartland|cart builder's land|English
+M|Cartwright|cart builder|English
+M|Cederic|battle chieftain|English
+M|Chancellor|record keeper|English
+M|Chandler|candle maker|English
+M|Channing|wise; church official|English
+M|Chanse|record keeper|English
+M|Charlton|Carl's town|English
+M|Chaucey|record keeper|English
+M|Cheston|rocky fortress|English
+M|Chilton|farm by the spring|English
+M|Clayborne|brook near the clay pit|English
+M|Clayton|town built near clay pit|English
+M|Cleavon|cliff|English
+M|Clifford|cliff at the river ford|English
+M|Clifton|town near cliff|English
+M|Clinton|town on hill|English
+M|Colton|coal town|English
+M| |Medieval Boys Names|Origin
+M|Courtney|of the royal court|English
+M|Cranley|meadow of the cranes |Old Eng. 
+M|Cuthbert|brilliant |Old Eng. 
+M|Dalton|town in the valley|English
+M|Darby|free from envy|Mid. Eng. 
+M|Darren|great |English 
+M|Darthmouth|port's name |English 
+M|Darwyn|dear friend|English
+M|Davidson|the adored one |English 
+M|Dawson|son of David|English
+M|Dayton|day town; light|English
+M|Delbert|bright as day|English
+M|Denver|green valley|English
+M|Denzel|location in Cornwall|English
+M|Devon|an English county |English 
+M|Drake|having dragon trademark|English
+M|Dudley|meadow |English 
+M|Durriken|fortune-telling |English 
+M|Durwin|dear friend |Old Eng. 
+M|Dwennon|one of originality |Old Eng. 
+M|Easton|eastern town|English
+M|Edgar|successful spearman|English
+M|Edmundus|prosperous protector |English 
+M|Egbert|bright sword|English
+M|Eldon|old farm; hill|English
+M|Elton|the old farm|English
+M|Erwan|form Irving|English
+M|Filmore|famous person|English
+M|Franklin|free landowner|English
+M|Galore|abundant; plenty|English
+M|Galorian|of abundance|English
+M|Garman|spearman|English
+M|Garrett|spear warrior|English 
+M|Garrick|grove of oaks|English
+M|Garridan|hidden fort|English 
+M|Garroway|spear fighter|English
+M|Gerard|brave spearman|English
+M|Godwin|divine or good friend |Old Eng. 
+M|Golding|son of the golden one |Old Eng. 
+M|Gordon|triangular-shaped hill|English
+M|Hadden|heather covered hill|English
+M|Haelan|healer|English
+M|Hammond|village|English
+M|Harding|brave; resilient|English
+M|Hartley|deer pasture |English 
+M|Haylan|healer|English
+M|Hazlitt|hazel tree wood |Old Eng. 
+M|Hearst|dweller in the wood |Old Eng. 
+M|Heathcliff|cliff-land|English 
+M| |Medieval Boys Names|Origin
+M|Heathcote|cottage on heath |Old Eng. 
+M|Holden|hollow in the valley|English
+M|Houston|hill town|English
+M|Howard|watchman|English
+M|Hunter|hunter|English
+M|Hyde|measure of land|English
+M|Irving|handsome|English
+M|Irwin|handsome, white river|English
+M|Jackson|son of Jack|English
+M|Jagger|carter or hawker |Mid. Eng. 
+M|Jamie|supplanter|English
+M|Jamison|the son of James|English 
+M|Jarrett|brave spearman|English
+M|Jaxon|son of Jack|English
+M|Jayden|God has heard |English 
+M|Jeffrey|divinely peaceful|English
+M|Jerald|spear warrior|English
+M|Jeremy|God will uplift|English
+M|Jerold|brave spearman|English
+M|Jerrard|spear warrior|English
+M|Johnson|son of John|English
+M|Judson|son of Judd|English
+M|Keaton|where hawks fly|English
+M|Kelton|keel town; seaport|English
+M|Kelvin|friend of ships |English
+M|Kendall|valley of the river Kent |English 
+M|Kipling|cures salmon or herring |Mid. Eng. 
+M|Kirby|church village|English
+M|Kolby|dark-haired one|English
+M|Lander|property owner|Mid. Eng. 
+M|Landon|open, grassy meadow|English
+M|Lanford|long river|English
+M|Langston|long, narrow town|English
+M|Layne|narrow road|English
+M|Leland|protected meadowland|English
+M|London|ruler of the world |English 
+M|Lyman|man from the valley|English
+M|Lyndon|hill of linden trees|English
+M|Macon|to make |Mid. Eng. 
+M|Maddox|benefactor's son|English
+M|Madison|good son|English
+M|Malin|little warrior |Old Eng. 
+M|Manfield|communal field |Old Eng. 
+M|Manley|brave and manly |Mid. Eng. 
+M|Manning|son of man |Old Eng. 
+M|Marden|valley with the pool |Old Eng. 
+M|Maven|is knowledgeable|English
+M|Mavis|song bird|English
+M|Maxwell|great spring|English
+M|Meldon|windmill set on hill|English
+M|Mendel|repairman|English
+M|Mitchell|who is like God?|English
+M|Moreland|marshland; moor|English
+M|Nilson|son of Neal|English 
+M|Oakes|dweller by the oaks|Mid. Eng. 
+M|Oakley|at the oak meadow |Mid. Eng. 
+M|Paige|youthful assistant|English
+M|Parker|park keeper|English
+M|Payton|town of warriors|English
+M|Pearson|son of Peter|English
+M|Peyton|town of warriors|English
+M|Pierson|the son of Peter|English 
+M|Preston|the estate of priest|English
+M|Quentin|fifth in order|English
+M|Radley|meadow of reeds|English
+M|Ramsey|island inhabited by rams|English
+M|Randall|shield with wolf insignia|English
+M|Raymond|wise protector|English
+M|Rhett|Rhys|English 
+M|Richard|rich & powerful ruler|English
+M|Ricker|powerful army|English
+M|River|river; riverbank|English
+M|Robert |famous, brilliance|English
+M|Robinson|the son of Robert|English 
+M|Robyn|small bird  |English 
+M|Rodney|island clearing|English
+M|Roldan|powerful, mighty |English 
+M|Royston|English place name |Old Eng. 
+M|Rudd|of ruddy complexion |Old Eng. 
+M|Rudyard|red enclosure |Old Eng. 
+M|Rylan|where rye is grown|English
+M|Sawyer|wood worker|English
+M|Sedgewick|farm in the rushes |Old Eng. 
+M|Severin|river in England |English 
+M|Shelton|town on ledge|English
+M|Sherman|sheep shearer|English
+M|Sherrod|clearer of the land|English
+M|Silas|forest dweller|English
+M|Sinjin|saint; holy man|English
+M|Somerville|summery hill |Old Eng. 
+M|Southwell|southern spring |Old Eng. 
+M|Spalding|divided field |English 
+M|Spencer|dispenser of provisions|English
+M|Sterling|silver penny|English
+M|Stewart|caretaker, steward|English
+M|Strong|powerful; strong|English
+M|Stuart|caretaker, steward|English
+M|Tanner|leather worker|English
+M|Tilton|prosperous town|English
+M|Trowbridge|wooden bridge |Old Eng. 
+M|Twyford|double ford |Old Eng. 
+M|Udolf|prosperous wolf |Old Eng. 
+M|Ulmer|famous wolf|English
+M|Unwin|the enemy |Old Eng. 
+M|Upton|upper farm or town |Old Eng. 
+M|Upwood|forest on the hill |Old Eng. 
+M|Usher|doorkeeper|English
+M|Walden|wood covered valley|English
+M|Wallace|from Wales|English
+M|Warden|valley watchman|English
+M|Warrick|town hero|English
+M|Wayland|land by the road|English
+M|Waylon|Wayland; land by the road|English
+M|Wayne|wagon maker|English
+M|Wesley|western meadow|English
+M|Weston|western town|English
+M|Whitcombe|wide valley |Old Eng. 
+M|Whitfield|the white field |Old Eng. 
+M|Willard|bold; resolve|English
+M|William|determined guardian|English
+M|Winston|friendly town|English
+M|Winthrop|victory at the crossroads|English
+M|Witter|wise warrior|English
+M|Wolfe|wolf|English
+M|Woodruff|forest ranger|English
+M|Woolsey|victorious wolf|English
+M|Wylie|charming; cunning|English
+M|Wymer|famous in battle|English
+M|Yates|the keeper of the gates |Mid. Eng.
