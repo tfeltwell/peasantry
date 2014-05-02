@@ -61,6 +61,7 @@ void Field::setCrop(int cropID){
             cropType = "Rye";  
             planted = true; 
             printf("Rye planted\n");
+            state = PLANTED;
             break;
         case 3: 
             cropType = "Barley"; 

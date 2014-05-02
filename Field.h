@@ -5,6 +5,15 @@
 #include <string>
 #include <SDL/SDL.h>
 
+enum fieldState {
+                FALLOW,
+                PLANTED,
+                GROWING,
+                MATURE,
+                STUBBLE,
+                DEAD
+               };
+
 class Field
 {
     public:
@@ -20,6 +29,8 @@ class Field
         int             getCropAge();
         bool            isPlanted();
         SDL_Surface*     surface;
+        fieldState      state;
+        
         
         
     private:
@@ -29,5 +40,7 @@ class Field
         bool            planted;
         int             age;
 };
+
+
 
 #endif
