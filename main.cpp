@@ -164,7 +164,7 @@ int main( int argc, char* args[] ){
                         printf("%i on %i/%i/%i\n",world.hour,world.day,world.month,world.year);
                         break;
                     case SDLK_p:
-                        field[1].setCrop(2);
+                        field[1].setCrop(C_RYE);
                         break;
                     default: ;
                 }       

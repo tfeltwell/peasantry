@@ -5,14 +5,21 @@
 #include <string>
 #include <SDL/SDL.h>
 
-enum fieldState {
-                FALLOW,
-                PLANTED,
-                GROWING,
-                MATURE,
-                STUBBLE,
-                DEAD
-               };
+enum FIELD_STATE {
+    F_FALLOW,
+    F_PLANTED,
+    F_GROWING,
+    F_MATURE,
+    F_STUBBLE,
+    F_DEAD
+};
+               
+enum CROP_TYPE {
+    C_GRASS,
+    C_WHEAT,
+    C_RYE,
+    C_BARLEY
+};
 
 class Field
 {
@@ -22,23 +29,23 @@ class Field
         ~Field();
         void            update();
         void            grow();
-        void            setCrop(int cropID);
+        void            setCrop(CROP_TYPE newCrop);
+        void            setState(FIELD_STATE newState);
         int             getX();
         int             getY();
-        std::string     getCrop();
+        CROP_TYPE       getCrop();
         int             getCropAge();
+        FIELD_STATE      getState();
         bool            isPlanted();
-        SDL_Surface*     surface;
-        fieldState      state;
-        
-        
+        SDL_Surface*    surface;
         
     private:
         int             x;
         int             y;
-        std::string     cropType;
+        CROP_TYPE       cropType;
         bool            planted;
         int             age;
+        FIELD_STATE      state;
 };
 
 
