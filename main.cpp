@@ -161,7 +161,7 @@ int main( int argc, char* args[] ){
                         printf("%s, S:%i I:%i C:%i L:%i\n",player.getName().c_str(),player.getSkill(0),player.getSkill(1),player.getSkill(2),player.getSkill(3));
                         break;
                     case SDLK_t:
-                        printf("%i on %i/%i/%i\n",world.hour,world.day,world.month,world.year);
+                        printf("%i on %i/%i/%i\n",world.getHour(),world.getDay(),world.getMonth(),world.getYear());
                         break;
                     case SDLK_p:
                         field[1].setCrop(C_RYE);
@@ -184,7 +184,7 @@ int main( int argc, char* args[] ){
         // Update objects
         if((newTime - oldTime)>1000){
             printf("Running update\n");
-            printf("%i on %i/%i/%i\n",world.hour,world.day,world.month,world.year);
+            printf("%s - %i on %i/%i/%i\n",world.getSeasonStr().c_str(),world.getHour(),world.getDay(),world.getMonth(),world.getYear());
             world.update();
             for(int i=0;i<(sizeof(field)/sizeof(field[0]));i++){
                 field[i].update();
