@@ -13,6 +13,15 @@ enum SEASON {
     AUTUMN,
     WINTER
 };
+
+enum TIMEDAY {
+    DAWN,
+    MORNING,
+    AFTERNOON,
+    DUSK,
+    EVENING,
+    NIGHT
+};
     
 
 class GameWorld
@@ -28,25 +37,37 @@ class GameWorld
         int             getMonth();
         int             getYear();
         SEASON          getSeason();        // Current season
+        TIMEDAY         getTimeDay();       // Time of day
         std::string     getSeasonStr();
+        std::string     getTimeDayStr();
         
     
     private:
+        // *** Members *** //
         int     hour;
         int     day;
         int     month;
         int     year;
         SEASON  currentSeason;
+        float   temperature;
+        TIMEDAY currentTimeDay;
         
+        // *** Methods *** //
         void    setDate(int h, int d, int m, int y); // Only used at init
+        // System control methods
+        void    doTime();
+        void    doWeather();
+        // Setters
+        bool    setSeason(SEASON newSeason);
+        void    setTemp(bool inc);
+        // Time stuff
         void    upHour();
         void    upDay();
         void    upMonth();
         void    upYear();
+        // Checkers
         bool    checkSeason();
-        bool    setSeason(SEASON newSeason);
-        
-
+        void    checkTimeDay();
 };
 
 #endif

@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "GameWorld.h"
 
 // Public
@@ -16,7 +17,8 @@ void GameWorld::init(){
 
 void GameWorld::update(){
     checkSeason();
-    upHour();
+    doTime();
+    doWeather();
 }
 
 int GameWorld::getMonthLen(int monthID){
@@ -67,6 +69,29 @@ std::string GameWorld::getSeasonStr(){
     }
 }
 
+std::string GameWorld::getTimeDayStr(){
+    switch(currentTimeDay){
+        case DAWN:
+            return "Dawn";
+            break;
+        case MORNING:
+            return "Morning";
+            break;
+        case AFTERNOON:
+            return "Afternoon";
+            break;
+        case DUSK:
+            return "Dusk";
+            break;
+        case EVENING:
+            return "Evening";
+            break;
+        case NIGHT:
+            return "Night";
+            break;
+    }
+}
+
 // Private
 
 void GameWorld::setDate(int h, int d, int m, int y){
@@ -75,6 +100,26 @@ void GameWorld::setDate(int h, int d, int m, int y){
     month = m;
     year = y;
     checkSeason(); // Ensure we get right season
+    checkTimeDay();
+}
+
+void GameWorld::doTime(){
+    checkTimeDay();
+    upHour();
+}
+
+void GameWorld::doWeather(){
+    switch(checkSeason()){
+        case WINTER:
+                break;
+        case SPRING:
+                break;
+        case SUMMER:
+                break;
+        case AUTUMN:
+                break;
+        default: ;
+    }
 }
 
 void GameWorld::upHour(){
@@ -106,6 +151,32 @@ void GameWorld::upYear(){
     hour = 0;
 }
 
+// Maybe refactor this so it checks before this is called?
+bool GameWorld::setSeason(SEASON newSeason){
+    if(newSeason!=currentSeason){
+        currentSeason = newSeason;
+        return true;
+    }
+    else{
+        return false;
+    }
+    
+}
+
+void GameWorld::setTemp(bool inc){
+    if(inc==true){
+        temperature += 0.5;
+    }
+    else{
+        temperature -= 0.5;
+    }
+}
+
+
+TIMEDAY GameWorld::getTimeDay(){
+    return currentTimeDay;
+}
+
 bool GameWorld::checkSeason(){
     switch(month){
         case 12:
@@ -129,16 +200,48 @@ bool GameWorld::checkSeason(){
     }
 }
 
-// Maybe refactor this so it checks before this is called?
-bool GameWorld::setSeason(SEASON newSeason){
-    if(newSeason!=currentSeason){
-        currentSeason = newSeason;
-        return true;
+void GameWorld::checkTimeDay(){
+    switch(currentSeason){
+        case WINTER:
+            if(0<=hour<=6){ currentTimeDay = NIGHT; }
+            else if(hour==7){ currentTimeDay = DAWN; }
+            else if(8<=hour<=11){ currentTimeDay = MORNING; }
+            else if(12<=hour<=15){ currentTimeDay = AFTERNOON; }
+            else if(hour<=16){ currentTimeDay = DUSK; }
+            else if(17<=hour<=23){ currentTimeDay = EVENING; }
+            break;
+            
+        case SPRING:
+            // 0--5, 6, 7--11, 12--17, 18, 19--23 
+            if(0<=hour<=5){ currentTimeDay = NIGHT; }
+            else if(hour==6){ currentTimeDay = DAWN; }
+            else if(7<=hour<=11){ currentTimeDay = MORNING; }
+            else if(12<=hour<=17){ currentTimeDay = AFTERNOON; }
+            else if(hour==18){ currentTimeDay = DUSK; }
+            else if(19<=hour<=23){ currentTimeDay = NIGHT; }
+            break;
+            
+        case SUMMER:
+            // 0--4, 5, 6--11, 12--20, 21, 22--23
+            if(hour<=4){ currentTimeDay = NIGHT; printf("Setting to night, %i\n",hour); }
+            else if(hour==5){ currentTimeDay = DAWN; }
+            else if(hour>=6 && hour<=11){ currentTimeDay = MORNING; }
+            else if(hour>=12 && hour<=20){ currentTimeDay = AFTERNOON; }
+            else if(hour==21){ currentTimeDay = DUSK; }
+            else if(hour>=22 && hour<=23){ currentTimeDay = NIGHT; }
+            break;
+            
+        case AUTUMN:
+            // 0--5, 6, 7--11, 12--17, 18, 19--23 
+            if(0<=hour<=5){ currentTimeDay = NIGHT; }
+            else if(hour==6){ currentTimeDay = DAWN; }
+            else if(7<=hour<=11){ currentTimeDay = MORNING; }
+            else if(12<=hour<=17){ currentTimeDay = AFTERNOON; }
+            else if(hour==18){ currentTimeDay = DUSK; }
+            else if(19<=hour<=23){ currentTimeDay = NIGHT; }
+            break;
+            
+        default: ;
     }
-    else{
-        return false;
-    }
-    
 }
-
 
