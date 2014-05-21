@@ -116,8 +116,9 @@ bool load_files(){
         if(field[i].surface==NULL){return false;}
     }
     
-    font = TTF_OpenFont("lazy.ttf",28);
-    if(font==NULL){printf("SDL failed to initialise font: %s\n",SDL_GetError());return false;}
+//    Disabled font until needed    
+//    font = TTF_OpenFont("lazy.ttf",28);
+//    if(font==NULL){printf("SDL failed to initialise font: %s\n",SDL_GetError());return false;}
     
     return true;
 }
@@ -132,8 +133,8 @@ void cleanup(){
         SDL_FreeSurface(field[i].surface);
     }
     
-    
-    TTF_CloseFont(font);
+//    Disabled until needed    
+//    TTF_CloseFont(font);
     TTF_Quit();
     
     SDL_Quit(); 
@@ -150,6 +151,9 @@ int main( int argc, char* args[] ){
     apply_surface(0,0,background,screen);
     
     while(quit==false){
+    
+        // Debug stuff with output here
+//        printf("%s: %s\n",world.getSeasonStr().c_str(),world.getTimeDayStr().c_str());
     
         // Event polling
         if (SDL_PollEvent(&event)){
@@ -184,7 +188,7 @@ int main( int argc, char* args[] ){
         // Update objects
         if((newTime - oldTime)>1000){
             printf("Running update\n");
-            printf("%s - %i on %i/%i/%i\n",world.getSeasonStr().c_str(),world.getHour(),world.getDay(),world.getMonth(),world.getYear());
+            printf("%s - Time: %i (%s) on %i/%i/%i\n",world.getSeasonStr().c_str(),world.getHour(),world.getTimeDayStr().c_str(),world.getDay(),world.getMonth(),world.getYear());
             world.update();
             for(int i=0;i<(sizeof(field)/sizeof(field[0]));i++){
                 field[i].update();
