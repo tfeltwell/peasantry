@@ -15,6 +15,7 @@ class Player
         int         getMoveAmount(int dir);
         std::string getName();
         int         getSkill(int ID);
+        int         getHealth();
         void        setX(int change);
         void        setY(int change);
         
@@ -31,6 +32,7 @@ class Player
         int         charisma;
         int         luck;
         int         moveSpeed;
+        int         health;
         // Birthday
 };
 

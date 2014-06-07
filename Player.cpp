@@ -8,6 +8,7 @@ Player::Player(int x, int y){
     std::srand(time(0)); //Init random number using current time
     generateName();
     generateSkills();
+    health = 100;
 }
 
 Player::~Player(){
@@ -40,6 +41,10 @@ int Player::getSkill(int ID){
         case 3: return luck; break;
         default: return 999; break; // Trigger exception here
     }
+}
+
+int Player::getHealth(){
+    return health;
 }
 
 void Player::generateName(){
