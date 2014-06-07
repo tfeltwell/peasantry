@@ -1,0 +1,14 @@
+Rough scrum todo:
+
+* Food to eat (to survive)
+
+* Rough inventory
+
+* Field animations
+
+* Contextual planting (collision detection)
+
+* Objects
+	- Trees
+	- Tools
+	- Buildings (maybe too hard)
