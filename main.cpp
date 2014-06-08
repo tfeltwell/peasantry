@@ -1,5 +1,6 @@
 #include <iostream>
 #include <stdlib.h>
+#include <time.h>
 #include "SDL/SDL.h"
 #include <SDL/SDL_image.h>
 #include <SDL/SDL_ttf.h>
@@ -34,11 +35,9 @@ SDL_Rect clip[4];
 // Game stuff
 GameWorld world;
 Player player(140,140);
-Field field[2] = {
-    Field(300,200),
-    Field(500,500)
-};
 
+int fieldNum = 4;
+Field field[4];
 
 // Load image function
 SDL_Surface *load_image( std::string filename ){
@@ -97,6 +96,13 @@ bool init(){
     
     // Init game world & other stuff
     world.init();
+    
+    // Random number
+    srand(time(NULL));
+    
+    for(int i=0;i<fieldNum;i++){
+        field[i].setXY(((rand() % 100)*10),((rand() % 100)*10));
+    }
     
     return true;
 }
