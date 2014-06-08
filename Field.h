@@ -33,6 +33,7 @@ class Field
         void            setState(FIELD_STATE newState);
         int             getX();
         int             getY();
+        void            setXY(int x, int y);
         CROP_TYPE       getCrop();
         int             getCropAge();
         FIELD_STATE      getState();

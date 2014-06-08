@@ -114,6 +114,11 @@ int Field::getY(){
     return y;
 }
 
+void Field::setXY(int x, int y){
+    this->x = x;
+    this->y = y;
+}
+
 CROP_TYPE Field::getCrop(){
     return cropType;
 }
