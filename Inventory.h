@@ -25,7 +25,7 @@ class Inventory
         ~Inventory();
         
     private:
-//        std::vector<Slot> inventorySlots; // A vector containing all the inventory slots
+        std::vector<Slot> inventorySlots; // A vector containing all the inventory slots
     
 };
 #endif
