@@ -9,6 +9,7 @@
 #include "GameWorld.h"
 #include "Player.h"
 #include "Field.h"
+#include "Item.h"
 
 using namespace std;
 
@@ -35,6 +36,7 @@ SDL_Rect clip[4];
 // Game stuff
 GameWorld world;
 Player player(140,140);
+Item firstItem;
 
 int fieldNum = 4;
 Field field[4];
@@ -101,7 +103,8 @@ bool init(){
     srand(time(NULL));
     
     for(int i=0;i<fieldNum;i++){
-        field[i].setXY(((rand() % 100)*10),((rand() % 100)*10));
+        field[i].setXY((rand() %SCREEN_WIDTH),(rand() % SCREEN_HEIGHT)); // Also check size of sprite
+//        printf("W:%i H:%i\n",(rand()%SCREEN_WIDTH),(rand()%SCREEN_HEIGHT));
     }
     
     return true;
@@ -121,6 +124,9 @@ bool load_files(){
         field[i].surface = load_image("assets/field.png");
         if(field[i].surface==NULL){return false;}
     }
+    
+    firstItem.surface = load_image("assets/axe.png");
+    if(firstItem.surface==NULL){return false;}
     
 //    Disabled font until needed    
 //    font = TTF_OpenFont("lazy.ttf",28);
@@ -193,8 +199,7 @@ int main( int argc, char* args[] ){
         
         // Update objects
         if((newTime - oldTime)>1000){
-            printf("Running update\n");
-            printf("%s - Time: %i (%s) on %i/%i/%i\n",world.getSeasonStr().c_str(),world.getHour(),world.getTimeDayStr().c_str(),world.getDay(),world.getMonth(),world.getYear());
+            printf("Running update: %s - Time: %i (%s) on %i/%i/%i\n",world.getSeasonStr().c_str(),world.getHour(),world.getTimeDayStr().c_str(),world.getDay(),world.getMonth(),world.getYear());
             world.update();
             for(int i=0;i<(sizeof(field)/sizeof(field[0]));i++){
                 field[i].update();
@@ -205,6 +210,7 @@ int main( int argc, char* args[] ){
         
         // Drawing
         apply_surface(0,0,background,screen);
+        apply_surface(firstItem.getX(),firstItem.getY(),firstItem.surface,screen);
         for(int i=0;i<(sizeof(field)/sizeof(field[0]));i++){
             apply_surface(field[i].getX(),field[i].getY(),field[i].surface,screen);
         }
