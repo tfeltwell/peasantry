@@ -9,6 +9,7 @@ Player::Player(int x, int y){
     generateName();
     generateSkills();
     health = 100;
+    playerInv = new Inventory();
 }
 
 Player::~Player(){

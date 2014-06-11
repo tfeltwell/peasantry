@@ -3,6 +3,7 @@
 
 // Dependencies
 #include <string>
+#include "Inventory.h"
 
 class Player
 {
@@ -18,6 +19,7 @@ class Player
         int         getHealth();
         void        setX(int change);
         void        setY(int change);
+        Inventory * playerInv;
         
     private:
         void generateName();
