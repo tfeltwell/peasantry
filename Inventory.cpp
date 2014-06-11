@@ -9,3 +9,8 @@ Inventory::~Inventory()
 {
 
 }
+
+int Inventory::getSize()
+{
+    return int(INVENTORY_SLOT_MAX);
+}

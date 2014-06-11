@@ -23,6 +23,7 @@ class Inventory
     public:
         Inventory();
         ~Inventory();
+        int     getSize();
         
     private:
         std::vector<Slot> inventorySlots; // A vector containing all the inventory slots
