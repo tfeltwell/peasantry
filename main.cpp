@@ -121,8 +121,7 @@ bool load_files(){
     if(playerSurf==NULL){return false;}
     
     for(int i=0;i<(sizeof(field)/sizeof(field[0]));i++){
-        field[i].surface = load_image("assets/field.png");
-        if(field[i].surface==NULL){return false;}
+        if(field[i].setSurface(load_image("assets/field.png"),64,64)==false){ return false; }
     }
     
     firstItem.surface = load_image("assets/axe.png");

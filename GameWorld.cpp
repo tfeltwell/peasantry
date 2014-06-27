@@ -223,8 +223,7 @@ void GameWorld::checkTimeDay(){
             
         case SUMMER:
             // 0--4, 5, 6--11, 12--20, 21, 22--23
-            if(hour<=4){ currentTimeDay = NIGHT; printf("Setting to night, %i\n",hour); }
-            else if(hour==5){ currentTimeDay = DAWN; }
+            if(hour==5){ currentTimeDay = DAWN; }
             else if(hour>=6 && hour<=11){ currentTimeDay = MORNING; }
             else if(hour>=12 && hour<=20){ currentTimeDay = AFTERNOON; }
             else if(hour==21){ currentTimeDay = DUSK; }

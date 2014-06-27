@@ -3,17 +3,8 @@
 
 
 Field::Field(){
-    x = 300;
+    x = -300;
     y = 0;
-    setCrop(C_GRASS);
-    surface = NULL;
-    printf("Blank constructor called for field\n");
-    
-}
-
-Field::Field(int x, int y){
-    this->x = x;
-    this->y = y;
     setCrop(C_GRASS);
     surface = NULL;
 }
@@ -133,4 +124,11 @@ FIELD_STATE Field::getState(){
 
 bool Field::isPlanted(){
     return planted;
+}
+
+bool Field::setSurface(SDL_Surface* newSurface, int sizeX, int sizeY){
+    surface = newSurface;
+    this->sizeX = sizeX;
+    this->sizeY = sizeY;
+    return true;
 }

@@ -25,7 +25,6 @@ class Field
 {
     public:
         Field();
-        Field(int x, int y);
         ~Field();
         void            update();
         void            grow();
@@ -36,13 +35,16 @@ class Field
         void            setXY(int x, int y);
         CROP_TYPE       getCrop();
         int             getCropAge();
-        FIELD_STATE      getState();
+        FIELD_STATE     getState();
         bool            isPlanted();
+        bool            setSurface(SDL_Surface* newSurface, int sizeX, int sizeY);
         SDL_Surface*    surface;
         
     private:
         int             x;
         int             y;
+        int             sizeX;
+        int             sizeY;
         CROP_TYPE       cropType;
         bool            planted;
         int             age;
