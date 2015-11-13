@@ -1,4 +1,4 @@
-Peasantry v0.1
+#1Peasantry v0.1
 
 Experience life as a 17th century European peasant. This is 
 the story much less known, and much more interesting.
@@ -8,7 +8,7 @@ through subsistence farming and rearing animals. Dealing with
 you manorial/feudal lords and their ruinous demands will also 
 feature heavily. 
 
-Note: Game is currently still in development, so definitely
+*Note*: Game is currently still in development, so definitely
 considered pre-alpha.
 
 Developer's note: This has been massively inspired by games such
@@ -16,6 +16,12 @@ as Unreal World RPG and Dwarf Fortress, in terms of the intensive
 simulation and the deep and faithful (in URW anyway) historical
 representation.  
 
-Developed by Tom Feltwell
+Developed by Tom Feltwell, 2013 ->
+
+#2 Technical Requirements
+
+Built in C++ using SDL 1.2. Development has been for Linux/Ubuntu.
+
+Makefile requires g++
 
 

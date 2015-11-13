@@ -7,6 +7,7 @@
 #include <string>
 
 #include "GameWorld.h"
+#include "Character.h"
 #include "Player.h"
 #include "Field.h"
 #include "Item.h"
@@ -37,6 +38,9 @@ SDL_Rect clip[4];
 GameWorld world;
 Player player(140,140);
 Item firstItem;
+
+Character npcOne;
+
 
 int fieldNum = 4;
 Field field[4];
@@ -180,6 +184,9 @@ int main( int argc, char* args[] ){
                         break;
                     case SDLK_p:
                         field[1].setCrop(C_RYE);
+                        break;
+                    case SDLK_c:
+                        npcOne.printDetails();
                         break;
                     default: ;
                 }       
