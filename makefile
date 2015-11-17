@@ -1,1 +1,1 @@
-g++ -o 1600-cpp GameWorld.h GameWorld.cpp Character.h Character.cpp Player.h Player.cpp Item.h Item.cpp Inventory.cpp  Field.h Field.cpp main.cpp -lSDL -lSDL_image -lSDL_ttf;
+g++ -o 1600-cpp GameWorld.h GameWorld.cpp NameGenerator.h NameGenerator.cpp Character.h Character.cpp Player.h Player.cpp Item.h Item.cpp Inventory.cpp Field.h Field.cpp main.cpp -lSDL -lSDL_image -lSDL_ttf;
