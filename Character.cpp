@@ -1,9 +1,23 @@
 #include "Character.h"
+#include "NameGenerator.h"
 #include <ctime>
 #include <cstdlib>
 
+NameGenerator nameGen;
+
+// Make a nice way to init characters with differing degrees of specificity
 Character::Character(){
     std::srand(time(0)); //Init random number using current time
+    sex = false;
+    generateName();
+    generateSkills();
+    health = 100;
+    characterInv = new Inventory();
+}
+
+Character::Character(bool gender){
+    std::srand(time(0));
+    sex = gender;
     generateName();
     generateSkills();
     health = 100;
@@ -34,6 +48,7 @@ int Character::getMoveAmount(int dir){
 
 
 std::string Character::getName(){
+    std::string charName = firstName + " " + lastName;
     return charName;
 }
 
@@ -52,7 +67,9 @@ int Character::getHealth(){
 }
 
 void Character::generateName(){
-    charName = "Patrick DuPerdinet";
+    firstName = nameGen.generateFirst(sex);
+    lastName = nameGen.generateLast();
+    return;
 }
 
 void Character::generateSkills(){
@@ -72,7 +89,7 @@ void Character::setY(int change){
 }
 
 void Character::printDetails(){
-    printf("Name: %s Age: %i Sex: %i Health: %i\n",charName.c_str(),age,sex,health);
+    printf("Name: %s Age: %i Sex: %i Health: %i\n",getName().c_str(),age,sex,health);
     printf("Skills: STR %i | INT %i | CHA %i | LUC %i",strength,intelligence,charisma,luck);
 }
 

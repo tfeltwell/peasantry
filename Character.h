@@ -9,6 +9,7 @@ class Character
 {
     public:
         Character();
+        Character(bool gender);
         ~Character();
         void        update();
         int         getX();
@@ -28,7 +29,8 @@ class Character
         void generateSkills();
         int         x;
         int         y;
-        std::string charName;
+        std::string firstName;
+        std::string lastName;
         int         age;
         bool        sex; // False = Male, True = Female
         int         strength;

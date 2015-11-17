@@ -39,7 +39,7 @@ GameWorld world;
 Player player(140,140);
 Item firstItem;
 
-Character npcOne;
+Character npcOne(false);
 
 
 int fieldNum = 4;
