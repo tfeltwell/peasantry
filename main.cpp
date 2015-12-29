@@ -40,6 +40,8 @@ Player player(140,140);
 Item firstItem;
 
 Character npcOne(false);
+Character npcTwo(false);
+Character npcThree(false);
 
 
 int fieldNum = 4;
@@ -187,6 +189,11 @@ int main( int argc, char* args[] ){
                         break;
                     case SDLK_c:
                         npcOne.printDetails();
+                        printf("%p\n",&npcOne); // Print memory address to check objects arent the same
+                        npcTwo.printDetails();
+                        printf("%p\n",&npcTwo);
+                        npcThree.printDetails();
+                        printf("%p\n",&npcThree);
                         break;
                     default: ;
                 }       

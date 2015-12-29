@@ -12,3 +12,6 @@ Rough scrum todo:
 	- Trees
 	- Tools
 	- Buildings (maybe too hard)
+
+[29/12/15]
+* Random number generator needs to be passed to characters or seed changed 

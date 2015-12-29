@@ -12,6 +12,7 @@ Character::Character(){
     generateName();
     generateSkills();
     health = 100;
+    age = 20;
     characterInv = new Inventory();
 }
 
@@ -21,6 +22,7 @@ Character::Character(bool gender){
     generateName();
     generateSkills();
     health = 100;
+    age = 20;
     characterInv = new Inventory();
 }
 
@@ -67,6 +69,7 @@ int Character::getHealth(){
 }
 
 void Character::generateName(){
+    printf("Generating name");
     firstName = nameGen.generateFirst(sex);
     lastName = nameGen.generateLast();
     return;
@@ -90,7 +93,7 @@ void Character::setY(int change){
 
 void Character::printDetails(){
     printf("Name: %s Age: %i Sex: %i Health: %i\n",getName().c_str(),age,sex,health);
-    printf("Skills: STR %i | INT %i | CHA %i | LUC %i",strength,intelligence,charisma,luck);
+    printf("Skills: STR %i | INT %i | CHA %i | LUC %i\n",strength,intelligence,charisma,luck);
 }
 
 
